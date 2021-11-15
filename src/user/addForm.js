@@ -37,7 +37,7 @@ export const AddUser =(props)=>{
                </div>
                {!state.message.success &&<h2 className="title_form">Ajout d'utilisateur</h2>}
                {state.message.status &&<div className="error">
-                  <p>Status doit etre:</p>
+                  <p>Status doit être :</p>
                   <ul>
                     <li>En validation</li>
                     <li>Validé</li>
@@ -46,7 +46,7 @@ export const AddUser =(props)=>{
                 </div>
                }
                 {state.message.date &&<div className="error">
-                  <p>Le format de la date doit etre :</p>
+                  <p>Le format de la date doit être :</p>
                       {state.message.date}
                  </div>
                }

@@ -38,7 +38,7 @@ export const reducer = (state=init(),action) => {
     const {type,value}=action;
    switch (type){
       case 'TOGGLE':
-         return {...state,toggle:value,message:{}};
+         return {...state,toggle:value,message:{},formData:initForm};
       case 'ADD':
          return { ...state,users:[value.user,...state.users],message:{...value.message},formData:initForm};
       case 'DELETE':
